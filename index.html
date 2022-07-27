@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Dan's Demo</title>
+  </head>
+  <script
+  src="https://browser.sentry-cdn.com/6.19.7/bundle.min.js"
+  integrity="sha384-KXjn4K+AYjp1cparCXazrB+5HKdi69IUYz8glD3ySH3fnDgMX3Wg6VTMvXUGr4KB"
+  crossorigin="anonymous"
+  ></script>
+  <script>
+    Sentry.init({
+      dsn: "https://db75257f1e514c0b9b61beb67ddf9be7@o1157406.ingest.sentry.io/6584955",
+    });
+  </script>
+  <script>
+    function a() {
+    b();
+    }
+    function b() {   
+      c();
+    }
+    function c() {   
+      d();
+    }
+    function d() {   
+      fooo();
+    }
+    a();
+  </script>
+  <body>
+    <div>
+      <h1>Hello World</h1>
+    </div>
+  </body>
+</html>
